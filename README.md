@@ -1,0 +1,1 @@
+Hello! this is basic code I drew up if you want to take team name and team scores from Max Preps. This uses puppeteer and it wasn't really necessary for the project I was making so I thought I would put it on github and see if anyone would like to use it. IDK if anyone will see this please enjoy my simple code :) 
