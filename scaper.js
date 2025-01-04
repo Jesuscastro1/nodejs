@@ -11,8 +11,8 @@ const scrapeWebsite = async(url) =>{
 
     const teamow = await page.evaluate(() => {
         const teamScore = document.querySelectorAll('.team-row');
-
-        return Array.from(teamScore).slice(0,4).map((div) => {
+        //.slice just choose how many u want it to select it from! 
+        return Array.from(teamScore).slice(0, n).map((div) => {
             const team = div.querySelector('a').innerText;
             const points = div.querySelector('div > :nth-child(2)').innerText;
             return {team,points};
@@ -27,4 +27,4 @@ const scrapeWebsite = async(url) =>{
 };
 
 
-scrapeWebsite('https://www.maxpreps.com/tx/carrollton/creekview-mustangs/basketball/');
+scrapeWebsite(//URL U WANT TO GET THE TEAM NAME AND SCORES FROM );
